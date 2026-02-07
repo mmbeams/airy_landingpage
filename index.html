@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airy — Instant product photos from one shot.</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo16.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true">
+    <span class="custom-cursor__label" id="cursor-label"></span>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="fixed-header" id="fixed-header" aria-label="Site header">
+    <nav class="fixed-header__nav" aria-label="Main">
+      <a href="#features" class="fixed-header__link">Features</a>
+      <a href="#pricing" class="fixed-header__link">Pricing</a>
+      <a href="#about" class="fixed-header__link">About</a>
+    </nav>
+    <a href="#" class="fixed-header__brand" aria-label="Airy">
+      <img class="fixed-header__logo" src="images/logo.svg" alt="" width="80" height="32">
+      <span class="fixed-header__word">Airy</span>
+    </a>
+    <div class="fixed-header__actions">
+      <a href="#" class="fixed-header__btn fixed-header__btn--outline">Start for free</a>
+      <a href="#" class="fixed-header__btn fixed-header__btn--fill">Book a demo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero__flair-wrap" id="hero-flair-wrap" aria-hidden="true">
+        <img class="flair" src="images/cursor_animation/1.png" alt="">
+        <img class="flair" src="images/cursor_animation/2.png" alt="">
+        <img class="flair" src="images/cursor_animation/3.png" alt="">
+        <img class="flair" src="images/cursor_animation/1.png" alt="">
+        <img class="flair" src="images/cursor_animation/2.png" alt="">
+        <img class="flair" src="images/cursor_animation/3.png" alt="">
+        <img class="flair" src="images/cursor_animation/1.png" alt="">
+        <img class="flair" src="images/cursor_animation/2.png" alt="">
+        <img class="flair" src="images/cursor_animation/3.png" alt="">
+      </div>
+      <div class="hero__media-between" id="hero-media-between">
+        <span class="hero__text-left" id="hero-text-left" aria-live="polite"></span>
+        <div class="hero__media-wrap" id="hero-media-wrap" aria-hidden="true">
+          <img src="images/product.jpg" alt="" class="hero__media-img" width="100" height="80" />
+        </div>
+        <span class="hero__text-right" id="hero-text-right" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <section class="content" aria-label="Intro">
+      <p class="content__copy">
+        <span class="content__line">Airy turns a single product</span>
+        <span class="content__line">photo into clean, sell-ready</span>
+        <span class="content__line">images for e-commerce.</span>
+      </p>
+      <a href="#" class="content__btn">Book a demo</a>
+    </section>
+
+    <section class="interface-tilt" id="interface-tilt" aria-label="Interface preview">
+      <div class="interface-tilt__outer">
+        <img class="interface-tilt__img" src="images/interface.png" alt="" />
+      </div>
+    </section>
+
+    <section class="word-swap" id="features" aria-label="Features">
+      <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <!-- CAPTURE: orange -->
+          <linearGradient id="feature-gradient-1" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#ffd9b0"/>
+            <stop offset="100%" stop-color="#FFC368"/>
+          </linearGradient>
+          <!-- GENERATE AND POLISH: soft teal -->
+          <linearGradient id="feature-gradient-2" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#d5f0ea"/>
+            <stop offset="100%" stop-color="#8FD9C6"/>
+          </linearGradient>
+          <!-- POLISH: purple -->
+          <linearGradient id="feature-gradient-3" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#f0e8fc"/>
+            <stop offset="100%" stop-color="#E1C1FF"/>
+          </linearGradient>
+          <!-- EXPORT: light -->
+          <linearGradient id="feature-gradient-4" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#f5e0c4"/>
+            <stop offset="100%" stop-color="#F7F6F2"/>
+          </linearGradient>
+          <!-- Entry: page bg – first wave reveals orange CAPTURE section -->
+          <linearGradient id="feature-gradient-entry" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#F7F6F2"/>
+            <stop offset="100%" stop-color="#ebe9e4"/>
+          </linearGradient>
+        </defs>
+        <path class="shape-overlays__path" data-layer="0" fill="url(#feature-gradient-4)"></path>
+        <path class="shape-overlays__path" data-layer="1" fill="url(#feature-gradient-3)"></path>
+        <path class="shape-overlays__path" data-layer="2" fill="url(#feature-gradient-2)"></path>
+        <path class="shape-overlays__path" data-layer="3" fill="url(#feature-gradient-1)"></path>
+        <path class="shape-overlays__path" data-layer="4" fill="url(#feature-gradient-entry)"></path>
+      </svg>
+      <div class="word-swap__pin" id="word-swap-pin">
+        <div class="word-swap__sticky">
+          <div class="word-swap__content">
+            <div class="word-swap__slide" data-step="0">
+              <div class="word-swap__slide-img">
+                <img src="images/feature1.png" alt="Capture step" />
+              </div>
+              <div class="word-swap__slide-text">
+                <h2 class="word-swap__word">Capture</h2>
+                <p class="word-swap__desc">Take a photo of your product, and we generate a clean product image for you.</p>
+              </div>
+            </div>
+            <div class="word-swap__slide" data-step="1">
+              <div class="word-swap__slide-img">
+                <img src="images/feature2.png" alt="Generate and Polish step" />
+              </div>
+              <div class="word-swap__slide-text">
+                <h2 class="word-swap__word">Generate</h2>
+                <p class="word-swap__desc">Airy's AI instantly generates clean, professional versions of your product image.</p>
+              </div>
+            </div>
+            <div class="word-swap__slide" data-step="2">
+              <div class="word-swap__slide-img">
+                <img src="images/feature3.png" alt="Polish step" />
+              </div>
+              <div class="word-swap__slide-text">
+                <h2 class="word-swap__word">Polish</h2>
+                <p class="word-swap__desc">Refine it with quick sketches, background changes, and detail edits.</p>
+              </div>
+            </div>
+            <div class="word-swap__slide" data-step="3">
+              <div class="word-swap__slide-img">
+                <img src="images/feature4.png" alt="Export step" />
+              </div>
+              <div class="word-swap__slide-text">
+                <h2 class="word-swap__word">Export</h2>
+                <p class="word-swap__desc">Export in seconds — ready for listings, ads, and socials.</p>
+              </div>
+            </div>
+          </div>
+          <nav class="word-swap__dots" aria-hidden="true">
+            <span class="word-swap__dot" data-dot="0"></span>
+            <span class="word-swap__dot" data-dot="1"></span>
+            <span class="word-swap__dot" data-dot="2"></span>
+            <span class="word-swap__dot" data-dot="3"></span>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--pricing" id="pricing" aria-label="Pricing">
+      <div class="bento">
+        <div class="bento__card bento__card--large">
+          <span class="bento__gradient" aria-hidden="true"></span>
+          <div class="bento__content">
+            <div class="bento__head">
+              <div class="bento__price">$29.99</div>
+            </div>
+            <a href="#" class="bento__btn">Get Airy Now</a>
+          </div>
+        </div>
+        <div class="bento__card bento__card--small">
+          <span class="bento__gradient" aria-hidden="true"></span>
+          <div class="bento__content">
+            <div class="bento__head">
+              <div class="bento__price">$0</div>
+            </div>
+            <a href="#" class="bento__btn">Try Free First</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--about" id="about" aria-label="About">
+      <div class="about-card" id="about-card"
+           data-name-left="Moira Huang" data-role-left="Creative" data-link-left="https://mmbeams.github.io"
+           data-name-right="Michael Tseng" data-role-right="CEO &amp; CTO" data-link-right="#">
+        <img class="about-card__img" src="images/about1.png" alt="Moira Huang" />
+        <img class="about-card__img" src="images/about2.png" alt="Michael Tseng" />
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer" aria-label="Footer">
+    <svg class="footer__svg" id="footer-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2278 683" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="footer-grad" x1="0" y1="0" x2="2278" y2="683" gradientUnits="userSpaceOnUse">
+          <stop offset="0.2" stop-color="#E0D0F0"></stop>
+          <stop offset="0.5" stop-color="#C4A1E5"></stop>
+          <stop offset="0.8" stop-color="#A67FD4"></stop>
+        </linearGradient>
+      </defs>
+      <path class="footer__path" id="bouncy-path" fill="url(#footer-grad)" d="M0-0.3C0-0.3,464,156,1139,156S2278-0.3,2278-0.3V683H0V-0.3z"/>
+    </svg>
+    <div class="footer__inner">
+      <span class="footer__brand">Airy</span>
+      <p class="footer__tagline">Instant product photos from one shot. On Mobile.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
