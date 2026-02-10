@@ -353,13 +353,13 @@ body {
   text-align: center;
   position: relative;
   z-index: 1;
-  margin-bottom: -3rem;
+  margin-bottom: -5rem;
 }
 
 @media (min-width: 768px) {
   .content {
     padding-top: var(--header-height-desktop);
-    margin-bottom: -4rem;
+    margin-bottom: -6rem;
   }
 }
 
@@ -424,6 +424,7 @@ body {
 
 /* --- Interface tilt (cursor interaction below intro) --- */
 .interface-tilt {
+  margin-top: -2rem;
   padding: 0 var(--header-padding-x) 4rem;
   display: flex;
   align-items: center;
@@ -449,6 +450,7 @@ body {
 
 @media (min-width: 768px) {
   .interface-tilt {
+    margin-top: -3rem;
     padding: 0 var(--header-padding-x) 5rem;
     min-height: 60vh;
   }
@@ -507,6 +509,13 @@ body {
   max-width: var(--content-max-width);
   margin: 0 auto;
   padding: 3rem 4rem;
+  min-height: 440px;
+}
+
+@media (min-width: 640px) {
+  .about-card {
+    min-height: 640px;
+  }
 }
 
 .about-card__img {
